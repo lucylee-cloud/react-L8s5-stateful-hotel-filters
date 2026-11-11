@@ -24,7 +24,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Hotel Finder</h1>
-        <Filters selectedFilters={this.state.selectedFilters} />
+        <Filters 
+          selectedFilters={this.state.selectedFilters}
+          toggleFilter={this.toggleFilter} />
         <Hotels selectedFilters={this.state.selectedFilters} />
       </div>
     );
